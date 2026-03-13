@@ -158,6 +158,17 @@
             margin: 0;
         }
 
+        .timeline-title a {
+            color: #2c3e50;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .timeline-title a:hover {
+            color: #E87722;
+            text-decoration: underline;
+        }
+
         .timeline-subtitle {
             font-style: italic;
             color: #555;
@@ -179,17 +190,14 @@
             color: #7f8c8d;
         }
 
-        .badge {
+        .tag {
             display: inline-block;
-            background: #f1c40f;
-            color: #8e44ad;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            font-weight: bold;
-            margin-top: 5px;
-            margin-right: 5px;
-            vertical-align: middle;
+            font-weight: 600;
+            color: #666666;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-right: 8px;
         }
 
         /* Responsiveness */
@@ -219,8 +227,7 @@
                 <a href="https://github.com/HelenaCarvalhoLeal" target="_blank" style="display:block;">GitHub</a>
                 
                 <strong>Contact</strong>
-                <a href="mailto:helenacarvalholeal99@gmail.com" style="display:block;">helenacarvalholeal99@gmail.com</a>
-                <span>+55 79 988535875</span>
+                <a href="mailto:helena_leal19@academico.ufs.br" style="display:block;">helena_leal19@academico.ufs.br</a>
             </div>
 
             <strong>Research Interests</strong>
@@ -230,6 +237,7 @@
                 <li>Fairness in ML</li>
                 <li>Vision-Language Models</li>
                 <li>Quantum Computing</li>
+                <li>Statistical Analysis</li>
             </ul>
             
             <strong>Tech Skills</strong>
@@ -363,20 +371,14 @@
                 <h2 class="section-title">Awards & Honors</h2>
                 
                 <div class="timeline-item">
-                    <span class="badge">Outstanding Graduating Student</span>
+                    <span class="tag">Outstanding Graduating Student</span>
                     <h3 class="timeline-title" style="display:inline-block;">Brazilian Computer Society (SBC)</h3>
                     <p class="timeline-subtitle">Tiradentes University (UNIT) • 2025.2</p>
                 </div>
 
-                <div class="timeline-item">
-                    <span class="badge">Best Poster Award</span>
-                    <h3 class="timeline-title" style="display:inline-block;">Optics and Photonics Session (OTI)</h3>
-                    <p class="timeline-subtitle">XXXIX Encontro de Física do Norte e Nordeste (EFNNE), Brazilian Physical Society (SBF) • Nov 2025</p>
-                    <p><em>Poster: "Introduction to LumPy: Simulated Results of Optically Stimulated Luminescence"</em></p>
-                </div>
 
                 <div class="timeline-item">
-                    <span class="badge">Best Paper</span>
+                    <span class="tag">Best Paper</span>
                     <h3 class="timeline-title" style="display:inline-block;">Digital Girls Workshop (Meninas Digitais)</h3>
                     <p class="timeline-subtitle">2025</p>
                 </div>
@@ -396,21 +398,72 @@
                 <h2 class="section-title">Talks & Presentations</h2>
 
                 <div class="timeline-item">
-                    <span class="badge">Talk</span>
+                    <span class="tag">Talk</span>
                     <h3 class="timeline-title" style="display:inline-block;">Quantum Computing Landscape: Challenges and Opportunities</h3>
                     <p class="timeline-subtitle">Campus Party Weekend, 2025</p>
                 </div>
 
                 <div class="timeline-item">
-                    <span class="badge">Workshop</span>
+                    <span class="tag">Workshop</span>
                     <h3 class="timeline-title" style="display:inline-block;">LaTeX Workshop</h3>
                     <p class="timeline-subtitle">Tiradentes University, 2025</p>
                 </div>
                 
+            </section>
+
+            <section id="posters">
+                <h2 class="section-title">Poster Presentations</h2>
+
                 <div class="timeline-item">
-                    <span class="badge">Poster</span>
+                    <span class="tag">Best Poster Award</span>
+                    <h3 class="timeline-title" style="display:inline-block;">Introduction to LumPy: Simulated Results of Optically Stimulated Luminescence</h3>
+                    <p class="timeline-subtitle">Optics and Photonics Session (OTI) • XXXIX Encontro de Física do Norte e Nordeste (EFNNE), Brazilian Physical Society (SBF) • Nov 2025</p>
+                    <p><em>Author; Presented by: Lucas Rodrigues Lustrino</em></p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title" style="display:inline-block;">Modelagem Virtual 3D de Acidentes Veiculares: Protótipo com Aplicação de Leis Físicas</h3>
+                    <p class="timeline-subtitle">LEAL, H. C.; OLIVEIRA, R. J. ; GOTO, R. T. ; MELO, A. W. D. ; ARAUJO, V. F. A. • 2025</p>
+                    <p class="timeline-subtitle">Congress Presentation</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title" style="display:inline-block;">Evaluating Skin Tone Biases in Virtual Human Rendering</h3>
+                    <p class="timeline-subtitle">MENEZES, E. M. B. ; LEAL, H. C. ; MOURA, J. V. R. ; ARAUJO, V. F. A. • 2025</p>
+                    <p class="timeline-subtitle">Conference Presentation</p>
+                </div>
+
+                <div class="timeline-item">
                     <h3 class="timeline-title" style="display:inline-block;">Infrastructure for Remote Execution of Quantum Algorithms on GPUs</h3>
                     <p class="timeline-subtitle">1st IEEE CASS Northeast Brazil Workshop</p>
+                </div>
+            </section>
+
+            <section id="media">
+                <h2 class="section-title">Interviews and Media Commentary</h2>
+
+                <div class="timeline-item">
+                    <span class="tag">Commentary</span>
+                    <h3 class="timeline-title" style="display:inline-block;">
+                        <a href="https://sergipenoticias.com/cotidiano/2025/08/40909/tecnologia-falha-ao-reproduzir-tons-de-pele-escuros-em-avata.html" target="_blank" rel="noopener noreferrer">Tecnologia falha ao reproduzir tons de pele escuros em avatares digitais</a>
+                    </h3>
+                    <p class="timeline-subtitle">ARAUJO, V. F. A. ; MENEZES, E. M. B. ; LEAL, H. C. ; MOURA, J. V. R. • 2025</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="tag">Commentary</span>
+                    <h3 class="timeline-title" style="display:inline-block;">
+                        <a href="https://counter.graphics/" target="_blank" rel="noopener noreferrer">Countering Racial Bias in Computer Graphics Research</a>
+                    </h3>
+                    <p class="timeline-subtitle">LEAL, H. C. • 2025</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="tag">Interview</span>
+                    <h3 class="timeline-title" style="display:inline-block;">
+                        <a href="https://portal.unit.br/blog/noticias/tecnologia-falha-ao-representar-tons-escuros-em-humanos-digitais/" target="_blank" rel="noopener noreferrer">Tecnologia falha ao representar tons escuros em humanos digitais</a>
+                    </h3>
+                    <p class="timeline-subtitle">MENEZES, E. M. B. ; LEAL, H. C. ; MOURA, J. V. R. ; ARAUJO, V. F. A. • 2025</p>
                 </div>
             </section>
 
@@ -439,6 +492,118 @@
                         <span class="timeline-date">2023 - 2025</span>
                     </div>
                     <p class="timeline-subtitle">Tiradentes University (UNIT)</p>
+                </div>
+            </section>
+
+            <section id="complementary-education">
+                <h2 class="section-title">Complementary Education</h2>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">How Computers Work</h3>
+                        <span class="timeline-date">2021</span>
+                    </div>
+                    <p class="timeline-subtitle">University Extension • University of London, UL, England</p>
+                    <p class="timeline-subtitle">Duration: 10h</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Física para Engenharia - Mecânica</h3>
+                        <span class="timeline-date">2021</span>
+                    </div>
+                    <p class="timeline-subtitle">Udemy, UDEMY, Brazil</p>
+                    <p class="timeline-subtitle">Duration: 22h</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Particle Physics: an Introduction</h3>
+                        <span class="timeline-date">2020</span>
+                    </div>
+                    <p class="timeline-subtitle">University Extension • Université de Genève, UNIGE, Switzerland</p>
+                    <p class="timeline-subtitle">Duration: 40h</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Física Nuclear e da Radiação</h3>
+                        <span class="timeline-date">2020</span>
+                    </div>
+                    <p class="timeline-subtitle">Udemy, UDEMY, Brazil</p>
+                    <p class="timeline-subtitle">Duration: 3h</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Game Theory II: Advanced Applications</h3>
+                        <span class="timeline-date">2020</span>
+                    </div>
+                    <p class="timeline-subtitle">Stanford University, STANFORD, United States</p>
+                    <p class="timeline-subtitle">Duration: 16h</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Organizational Analysis</h3>
+                        <span class="timeline-date">2020</span>
+                    </div>
+                    <p class="timeline-subtitle">Stanford University, STANFORD, United States</p>
+                    <p class="timeline-subtitle">Duration: 25h</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Administração Financeira</h3>
+                        <span class="timeline-date">2020</span>
+                    </div>
+                    <p class="timeline-subtitle">Insper Instituto de Ensino e Pesquisa, INSPER, Brazil</p>
+                    <p class="timeline-subtitle">Duration: 22h</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Game Theory</h3>
+                        <span class="timeline-date">2020</span>
+                    </div>
+                    <p class="timeline-subtitle">Stanford University, STANFORD, United States</p>
+                    <p class="timeline-subtitle">Duration: 17h</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Social and Economic Networks: Models and Analysis</h3>
+                        <span class="timeline-date">2020</span>
+                    </div>
+                    <p class="timeline-subtitle">Stanford University, STANFORD, United States</p>
+                    <p class="timeline-subtitle">Duration: 29h</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">U.S. Government</h3>
+                        <span class="timeline-date">2019 - 2020</span>
+                    </div>
+                    <p class="timeline-subtitle">Harvard University, HARVARD, United States</p>
+                    <p class="timeline-subtitle">Duration: 32h</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">Astrophysics</h3>
+                        <span class="timeline-date">2016 - 2020</span>
+                    </div>
+                    <p class="timeline-subtitle">University Extension • Australian National University, ANU, Australia</p>
+                    <p class="timeline-subtitle">Duration: 76h</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">XXIV Ensef UFS - A evolução Química da Galáxia</h3>
+                        <span class="timeline-date">2019</span>
+                    </div>
+                    <p class="timeline-subtitle">Universidade Federal de Sergipe, UFS, Brazil</p>
+                    <p class="timeline-subtitle">Duration: 4h</p>
                 </div>
             </section>
 
