@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academic and professional profile - Helena Carvalho Leal">
+    <title>Helena Carvalho Leal</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f8f9fa;
+            --border-color: #e1e4e8;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Lora', serif;
+            color: var(--primary-color);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+
+        /* Main Layout */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 40px;
+        }
+
+        /* Sidebar (Left) */
+        .sidebar {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            height: fit-content;
+        }
+
+        .profile-img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid var(--border-color);
+        }
+
+        .sidebar h1 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .sidebar p.title {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .contact-info {
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-info strong {
+            display: block;
+            margin-top: 15px;
+            color: var(--secondary-color);
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .skills-list li {
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            padding: 4px 10px;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            color: var(--secondary-color);
+        }
+
+        /* Main Content (Right) */
+        .main-content {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            border-left: 4px solid var(--accent-color);
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Experience/Education Items */
+        .timeline-item {
+            margin-bottom: 25px;
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 10px;
+        }
+
+        .timeline-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin: 0;
+        }
+
+        .timeline-subtitle {
+            font-style: italic;
+            color: #555;
+            margin: 0;
+        }
+        
+        .paper-list {
+            list-style: disc;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        .paper-list li {
+            margin-bottom: 15px;
+        }
+
+        .timeline-date {
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+
+        .badge {
+            display: inline-block;
+            background: #f1c40f;
+            color: #8e44ad;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <img src="foto.jpeg" alt="Helena Carvalho Leal" class="profile-img">
+            <h1>Helena Carvalho Leal</h1>
+            <p class="title">M.Sc. Student in Computer Science | Researcher</p>
+            
+            <div class="contact-info">
+                <strong>Location</strong>
+                <span>Aracaju, Sergipe, Brazil</span>
+
+                <strong>Academic Profiles</strong>
+                <a href="https://scholar.google.com.br/citations?user=opWCSkUAAAAJ" target="_blank" style="display:block;">Google Scholar</a>
+                <a href="https://lattes.cnpq.br/6670647757519338" target="_blank" style="display:block;">Lattes Curriculum</a>
+                <a href="https://www.linkedin.com/in/helena-carvalho-leal/" target="_blank" style="display:block;">LinkedIn</a>
+                <a href="https://github.com/HelenaCarvalhoLeal" target="_blank" style="display:block;">GitHub</a>
+                
+                <strong>Email</strong>
+                <a href="mailto:helenacarvalholeal99@gmail.com">helenacarvalholeal99@gmail.com</a>
+            </div>
+
+            <strong>Research Interests</strong>
+            <ul class="skills-list">
+                <li>Quantum Computing</li>
+                <li>Artificial Intelligence</li>
+                <li>Statistical Analysis</li>
+            </ul>
+            
+            <strong>Tech Skills</strong>
+            <ul class="skills-list">
+                <li>JavaScript & React.js</li>
+                <li>Python & Flask</li>
+                <li>HTML & CSS</li>
+            </ul>
+
+            <strong>Languages</strong>
+            <ul class="skills-list">
+                <li>Portuguese (Native)</li>
+                <li>English (Fluent)</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            
+            <section id="about">
+                <h2 class="section-title">About</h2>
+                <p>I am an M.Sc. Student in Computer Science at the Federal University of Sergipe (UFS) and a Researcher focused on the intersection of Quantum Computing, Artificial Intelligence, and Statistical Analysis. With three years of studies in Physics (Teaching Track) and a B.Sc. in Computer Science, I have developed a solid analytical foundation and a multidisciplinary approach to tackling complex challenges.</p>
+                <p>In programming, I am proficient in front-end development using HTML, CSS, JavaScript, and React, alongside backend logic with Python. I am constantly seeking to integrate theory and practice into innovative projects that promote technological and scientific advancement, ensuring accuracy and accessibility in research tools.</p>
+            </section>
+
+            <section id="publications">
+                <h2 class="section-title">Selected Publications</h2>
+                <ul class="paper-list">
+                    <li>
+                        <strong>Evaluating Skin Tone Biases in Virtual Human Rendering.</strong> <br>
+                        E. Menezes, H. Leal, J. V. Moura, V. Araujo, S. R. Musse. <br>
+                        <em>ACM SIGGRAPH Conference Posters, 2025.</em> 
+                        <a href="https://doi.org/10.1145/3721250.3743031" target="_blank">DOI: 10.1145/3721250.3743031</a>
+                    </li>
+                    <li>
+                        <strong>Um Ambiente Integrado à Qiskit para Execução Remota de Algoritmos Quânticos em GPU.</strong> <br>
+                        M. E. M. da Silva, H. C. Leal, C. M. Oliveira Conceição, R. B. Barros Garcia. <br>
+                        <em>Escola Regional de Computação Bahia, Alagoas e Sergipe (ERBASE), 2025.</em>
+                    </li>
+                    <li>
+                        <strong>Presença Feminina em Diversas Áreas de TI no Nordeste: Uma Análise Exploratória dos Desafios e Oportunidades.</strong> <br>
+                        R. J. Oliveira, H. C. Leal, J. S. S. Ivo, L. Souza, F. M. B. Vieira, S. Santos, M. Teixeira, et al. <br>
+                        <em>Escola Regional de Computação Bahia, Alagoas e Sergipe (ERBASE), 2025.</em>
+                    </li>
+                    <li>
+                        <strong>Presença de Projetos Parceiros Nordestinos do Meninas Digitais em Artigos do WIT: Análise Qualitativa de Temáticas Trabalhadas.</strong> <br>
+                        H. C. Leal, R. J. Oliveira, J. S. S. Ivo, L. Souza, F. M. B. Vieira, S. Santos, M. Teixeira, et al. <br>
+                        <em>Escola Regional de Computação Bahia, Alagoas e Sergipe (ERBASE), 2025.</em>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="experience">
+                <h2 class="section-title">Research Experience</h2>
+                
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-title">Artificial Intelligence Research Assistant</h3>
+                            <p class="timeline-subtitle">ADA Metaverse</p>
+                        </div>
+                    </div>
+                    <p>My work involves using visual language models (VLM) for interpreting forensic scenes and ensuring the accuracy of simulations through the study of the physical principles involved.</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-title">Software Engineer & Quantum Computing Researcher</h3>
+                            <p class="timeline-subtitle">Federal University of Sergipe (UFS) - PIBIC</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Developed a graphical interface for the Lumpy (Luminescence Python Interface) library, making it more accessible to experimental physicists.</li>
+                        <li>Separated the fundamental calculations into a Python API using Flask, enabling communication with the front-end (React.js).</li>
+                        <li>Verified the accuracy of simulated values against theoretical data.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="technical-productions">
+                <h2 class="section-title">Other Technical Productions</h2>
+                
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-title">Automatic Feeder “Full Feeder”: Prototyping</h3>
+                            <p class="timeline-subtitle">Apr 2023 - Apr 2024</p>
+                        </div>
+                    </div>
+                    <p>Prototyping of an autonomous system with an integrated battery and voltage monitoring for controlled horse feeding (up to 8 mini portions daily to prevent colic). Project advanced in collaboration with Prof. Antônio Ramirez (Electrical Engineering Dept., UFS). The report serves as a basis for future developments, including electrical safety enhancements and embedded systems integration.</p>
+                    <p><a href="https://doi.org/10.13140/RG.2.2.33842.82880" target="_blank">DOI: 10.13140/RG.2.2.33842.82880</a></p>
+                </div>
+            </section>
+
+            <section id="awards">
+                <h2 class="section-title">Awards & Honors</h2>
+                
+                <div class="timeline-item">
+                    <span class="badge">Best Paper</span>
+                    <h3 class="timeline-title" style="display:inline-block;">Digital Girls Workshop (Meninas Digitais)</h3>
+                    <p class="timeline-subtitle">2025</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="badge">Outstanding Student Award</span>
+                    <h3 class="timeline-title" style="display:inline-block;">Brazilian Computer Society (SBC)</h3>
+                    <p class="timeline-subtitle">Tiradentes University (UNIT)</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title">FAPITEC/SE Research Scholarship Holder</h3>
+                    <p class="timeline-subtitle">Apr 2024 - Jan 2025</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title">Certificate of Excellence: Qiskit Global Summer School</h3>
+                    <p class="timeline-subtitle">IBM (2024)</p>
+                </div>
+            </section>
+
+            <section id="talks">
+                <h2 class="section-title">Talks & Workshops</h2>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title">Quantum Computing Landscape: Challenges and Opportunities</h3>
+                    <p class="timeline-subtitle">Campus Party Weekend, 2025</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title">LaTeX Workshop</h3>
+                    <p class="timeline-subtitle">Tiradentes University, 2025</p>
+                </div>
+                
+                <div class="timeline-item">
+                    <h3 class="timeline-title">Infrastructure for Remote Execution of Quantum Algorithms on GPUs</h3>
+                    <p class="timeline-subtitle">1st IEEE CASS Northeast Brazil Workshop</p>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2 class="section-title">Education</h2>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title">M.Sc. Student in Computer Science</h3>
+                    <p class="timeline-subtitle">Federal University of Sergipe (UFS)</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title">B.Sc. in Computer Science</h3>
+                    <p class="timeline-subtitle">Tiradentes University (UNIT)</p>
+                </div>
+
+                <div class="timeline-item">
+                    <h3 class="timeline-title">Undergraduate Student in Physics (Teaching Track)</h3>
+                    <p class="timeline-subtitle">Federal University of Sergipe (UFS)</p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+</body>
+</html>
