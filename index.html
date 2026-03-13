@@ -189,6 +189,7 @@
             font-weight: bold;
             margin-top: 5px;
             margin-right: 5px;
+            vertical-align: middle;
         }
 
         /* Responsiveness */
@@ -205,7 +206,7 @@
         <aside class="sidebar">
             <img src="foto.jpeg" alt="Helena Carvalho Leal" class="profile-img">
             <h1>Helena Carvalho Leal</h1>
-            <p class="title">M.Sc. Student in Computer Science | Researcher</p>
+            <p class="title">Machine Learning Researcher | M.Sc. Student in Computer Science</p>
             
             <div class="contact-info">
                 <strong>Location</strong>
@@ -217,22 +218,27 @@
                 <a href="https://www.linkedin.com/in/helena-carvalho-leal/" target="_blank" style="display:block;">LinkedIn</a>
                 <a href="https://github.com/HelenaCarvalhoLeal" target="_blank" style="display:block;">GitHub</a>
                 
-                <strong>Email</strong>
-                <a href="mailto:helenacarvalholeal99@gmail.com">helenacarvalholeal99@gmail.com</a>
+                <strong>Contact</strong>
+                <a href="mailto:helenacarvalholeal99@gmail.com" style="display:block;">helenacarvalholeal99@gmail.com</a>
+                <span>+55 79 988535875</span>
             </div>
 
             <strong>Research Interests</strong>
             <ul class="skills-list">
+                <li>Machine Learning</li>
+                <li>Representation Learning</li>
+                <li>Fairness in ML</li>
+                <li>Vision-Language Models</li>
                 <li>Quantum Computing</li>
-                <li>Artificial Intelligence</li>
-                <li>Statistical Analysis</li>
             </ul>
             
             <strong>Tech Skills</strong>
             <ul class="skills-list">
+                <li>Python & PyTorch</li>
+                <li>NumPy & scikit-learn</li>
+                <li>OpenCV</li>
                 <li>JavaScript & React.js</li>
-                <li>Python & Flask</li>
-                <li>HTML & CSS</li>
+                <li>Flask</li>
             </ul>
 
             <strong>Languages</strong>
@@ -246,8 +252,8 @@
             
             <section id="about">
                 <h2 class="section-title">About</h2>
-                <p>I am an M.Sc. Student in Computer Science at the Federal University of Sergipe (UFS) and a Researcher focused on the intersection of Quantum Computing, Artificial Intelligence, and Statistical Analysis. With three years of studies in Physics (Teaching Track) and a B.Sc. in Computer Science, I have developed a solid analytical foundation and a multidisciplinary approach to tackling complex challenges.</p>
-                <p>In programming, I am proficient in front-end development using HTML, CSS, JavaScript, and React, alongside backend logic with Python. I am constantly seeking to integrate theory and practice into innovative projects that promote technological and scientific advancement, ensuring accuracy and accessibility in research tools.</p>
+                <p>I am a Researcher in Machine Learning with a strong focus on Representation Learning and Fairness, alongside a robust academic background bridging Physics and Computer Science. I have a proven ability to connect theoretical physics with digital innovation.</p>
+                <p>My current work involves leveraging Vision-Language Models (VLM) for forensic analysis and developing scientific software. As a published author at ACM SIGGRAPH 2025, my expertise includes analyzing skin tone biases in virtual human rendering and building pipelines to quantify fairness and assess cross-domain robustness in deep learning models.</p>
             </section>
 
             <section id="publications">
@@ -255,8 +261,8 @@
                 <ul class="paper-list">
                     <li>
                         <strong>Evaluating Skin Tone Biases in Virtual Human Rendering.</strong> <br>
-                        E. Menezes, H. Leal, J. V. Moura, V. Araujo, S. R. Musse. <br>
-                        <em>ACM SIGGRAPH Conference Posters, 2025.</em> 
+                        Menezes, E. M. de B., Leal, H. C., Moura, J. V. R., Araujo, V. F. de A., & Musse, S. R. <br>
+                        <em>Accepted at ACM SIGGRAPH Conference Posters, 2025 (Vancouver, Canada).</em> 
                         <a href="https://doi.org/10.1145/3721250.3743031" target="_blank">DOI: 10.1145/3721250.3743031</a>
                     </li>
                     <li>
@@ -278,29 +284,62 @@
             </section>
 
             <section id="experience">
-                <h2 class="section-title">Research Experience</h2>
+                <h2 class="section-title">Experience</h2>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-title">Independent Research (Undergraduate Thesis)</h3>
+                            <p class="timeline-subtitle">2025</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>Designed and implemented geometric-label strategies (facial symmetry, golden ratio, neoclassical proportions) to reduce reliance on subjective human annotations.</li>
+                        <li>Trained and evaluated deep learning classifiers on CelebA to analyze bias patterns across demographic attributes.</li>
+                        <li>Quantified fairness using Equality of Opportunity and comparative performance metrics across subgroups.</li>
+                        <li>Conducted cross-domain robustness analysis using synthetic datasets and explored Pareto-optimal ensembles.</li>
+                        <li>Developed pipelines in Python (PyTorch, NumPy, scikit-learn) for bias evaluation.</li>
+                    </ul>
+                </div>
                 
                 <div class="timeline-item">
                     <div class="timeline-header">
                         <div>
-                            <h3 class="timeline-title">Artificial Intelligence Research Assistant</h3>
-                            <p class="timeline-subtitle">ADA Metaverse</p>
+                            <h3 class="timeline-title">Software Engineer (VLM & Physics Simulations)</h3>
+                            <p class="timeline-subtitle">ADA Metaverse • 2025</p>
                         </div>
                     </div>
-                    <p>My work involves using visual language models (VLM) for interpreting forensic scenes and ensuring the accuracy of simulations through the study of the physical principles involved.</p>
+                    <ul>
+                        <li>Leveraged Vision-Language Models (VLM) to automate the interpretation and analysis of forensic scenes.</li>
+                        <li>Ensured the physical accuracy of metaverse simulations by conducting in-depth studies of underlying physical principles.</li>
+                    </ul>
                 </div>
 
                 <div class="timeline-item">
                     <div class="timeline-header">
                         <div>
-                            <h3 class="timeline-title">Software Engineer & Quantum Computing Researcher</h3>
-                            <p class="timeline-subtitle">Federal University of Sergipe (UFS) - PIBIC</p>
+                            <h3 class="timeline-title">Research Assistant</h3>
+                            <p class="timeline-subtitle">Interdisciplinary Research Group in Technology, Computing, and Society (GPITCS) - UNIT • 2024 - 2025</p>
                         </div>
                     </div>
                     <ul>
-                        <li>Developed a graphical interface for the Lumpy (Luminescence Python Interface) library, making it more accessible to experimental physicists.</li>
-                        <li>Separated the fundamental calculations into a Python API using Flask, enabling communication with the front-end (React.js).</li>
-                        <li>Verified the accuracy of simulated values against theoretical data.</li>
+                        <li>Conducted statistical analysis to evaluate skin tone bias across 80 rendered Virtual Humans (VHs).</li>
+                        <li>Extracted and analyzed median RGB intensity as a metric for rendering fidelity.</li>
+                        <li>Performed comparative statistical evaluation between two color pipelines (MST-CS vs. MST-RS) across all 10 Monk Skin Tone levels.</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <div>
+                            <h3 class="timeline-title">Research Assistant & Software Engineer</h3>
+                            <p class="timeline-subtitle">Laboratory of Materials Preparation and Characterization (LPMC) - UFS • 2024 - 2025</p>
+                        </div>
+                    </div>
+                    <ul>
+                        <li><strong>Full-Stack Development:</strong> Developed a comprehensive GUI for Lumpy (Luminescence Python Interface), enhancing accessibility for experimental physicists.</li>
+                        <li><strong>Backend & API:</strong> Architected a Python API using Flask to decouple core physical calculations from the frontend.</li>
+                        <li><strong>Frontend & UX:</strong> Built a responsive user interface using React.js and conducted usability testing with PhD researchers using real-world experimental data.</li>
                     </ul>
                 </div>
             </section>
@@ -315,7 +354,7 @@
                             <p class="timeline-subtitle">Apr 2023 - Apr 2024</p>
                         </div>
                     </div>
-                    <p>Prototyping of an autonomous system with an integrated battery and voltage monitoring for controlled horse feeding (up to 8 mini portions daily to prevent colic). Project advanced in collaboration with Prof. Antônio Ramirez (Electrical Engineering Dept., UFS). The report serves as a basis for future developments, including electrical safety enhancements and embedded systems integration.</p>
+                    <p>Prototyping of an autonomous system with an integrated battery and voltage monitoring for controlled horse feeding. Project advanced in collaboration with Prof. Antônio Ramirez (Electrical Engineering Dept., UFS). The report serves as a basis for future developments, including electrical safety enhancements and embedded systems integration.</p>
                     <p><a href="https://doi.org/10.13140/RG.2.2.33842.82880" target="_blank">DOI: 10.13140/RG.2.2.33842.82880</a></p>
                 </div>
             </section>
@@ -324,43 +363,53 @@
                 <h2 class="section-title">Awards & Honors</h2>
                 
                 <div class="timeline-item">
+                    <span class="badge">Outstanding Graduating Student</span>
+                    <h3 class="timeline-title" style="display:inline-block;">Brazilian Computer Society (SBC)</h3>
+                    <p class="timeline-subtitle">Tiradentes University (UNIT) • 2025.2</p>
+                </div>
+
+                <div class="timeline-item">
+                    <span class="badge">Best Poster Award</span>
+                    <h3 class="timeline-title" style="display:inline-block;">Optics and Photonics Session (OTI)</h3>
+                    <p class="timeline-subtitle">XXXIX Encontro de Física do Norte e Nordeste (EFNNE), Brazilian Physical Society (SBF) • Nov 2025</p>
+                    <p><em>Poster: "Introduction to LumPy: Simulated Results of Optically Stimulated Luminescence"</em></p>
+                </div>
+
+                <div class="timeline-item">
                     <span class="badge">Best Paper</span>
                     <h3 class="timeline-title" style="display:inline-block;">Digital Girls Workshop (Meninas Digitais)</h3>
                     <p class="timeline-subtitle">2025</p>
                 </div>
 
                 <div class="timeline-item">
-                    <span class="badge">Outstanding Student Award</span>
-                    <h3 class="timeline-title" style="display:inline-block;">Brazilian Computer Society (SBC)</h3>
-                    <p class="timeline-subtitle">Tiradentes University (UNIT)</p>
-                </div>
-
-                <div class="timeline-item">
-                    <h3 class="timeline-title">FAPITEC/SE Research Scholarship Holder</h3>
-                    <p class="timeline-subtitle">Apr 2024 - Jan 2025</p>
+                    <h3 class="timeline-title">Research Fellowship (FAPITEC-SE)</h3>
+                    <p class="timeline-subtitle">State Research Funding Agency • Apr 2025 - Jan 2026</p>
                 </div>
 
                 <div class="timeline-item">
                     <h3 class="timeline-title">Certificate of Excellence: Qiskit Global Summer School</h3>
-                    <p class="timeline-subtitle">IBM (2024)</p>
+                    <p class="timeline-subtitle">IBM • 2024</p>
                 </div>
             </section>
 
-            <section id="talks">
-                <h2 class="section-title">Talks & Workshops</h2>
+            <section id="presentations">
+                <h2 class="section-title">Talks & Presentations</h2>
 
                 <div class="timeline-item">
-                    <h3 class="timeline-title">Quantum Computing Landscape: Challenges and Opportunities</h3>
+                    <span class="badge">Talk</span>
+                    <h3 class="timeline-title" style="display:inline-block;">Quantum Computing Landscape: Challenges and Opportunities</h3>
                     <p class="timeline-subtitle">Campus Party Weekend, 2025</p>
                 </div>
 
                 <div class="timeline-item">
-                    <h3 class="timeline-title">LaTeX Workshop</h3>
+                    <span class="badge">Workshop</span>
+                    <h3 class="timeline-title" style="display:inline-block;">LaTeX Workshop</h3>
                     <p class="timeline-subtitle">Tiradentes University, 2025</p>
                 </div>
                 
                 <div class="timeline-item">
-                    <h3 class="timeline-title">Infrastructure for Remote Execution of Quantum Algorithms on GPUs</h3>
+                    <span class="badge">Poster</span>
+                    <h3 class="timeline-title" style="display:inline-block;">Infrastructure for Remote Execution of Quantum Algorithms on GPUs</h3>
                     <p class="timeline-subtitle">1st IEEE CASS Northeast Brazil Workshop</p>
                 </div>
             </section>
@@ -369,18 +418,27 @@
                 <h2 class="section-title">Education</h2>
 
                 <div class="timeline-item">
-                    <h3 class="timeline-title">M.Sc. Student in Computer Science</h3>
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">M.Sc. in Computer Science</h3>
+                        <span class="timeline-date">Expected Jul 2027</span>
+                    </div>
                     <p class="timeline-subtitle">Federal University of Sergipe (UFS)</p>
                 </div>
 
                 <div class="timeline-item">
-                    <h3 class="timeline-title">B.Sc. in Computer Science</h3>
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">B.Sc. in Physics (Teaching Concentration)</h3>
+                        <span class="timeline-date">Expected Jul 2027</span>
+                    </div>
+                    <p class="timeline-subtitle">Federal University of Sergipe (UFS)</p>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">B.Sc. in Computer Science</h3>
+                        <span class="timeline-date">2023 - 2025</span>
+                    </div>
                     <p class="timeline-subtitle">Tiradentes University (UNIT)</p>
-                </div>
-
-                <div class="timeline-item">
-                    <h3 class="timeline-title">Undergraduate Student in Physics (Teaching Track)</h3>
-                    <p class="timeline-subtitle">Federal University of Sergipe (UFS)</p>
                 </div>
             </section>
 
